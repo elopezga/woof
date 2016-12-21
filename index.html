@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Doggy Date</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
+
+        <style>
+            .debug-style{
+                border: 1px solid black;
+            }
+
+            body{
+                background-color: #fff6e6;
+            }
+
+            .well{
+                background-color: orange;
+            }
+
+            .navbar .navbar-nav{
+                width: 100%;
+                text-align: center;
+            }
+
+            #center-brand{
+                float: none;
+                display: inline-block;
+                border: 1px solid black;
+            }
+
+            #nav-bars{
+              border: 1px solid black;
+            }
+
+            .navbar-simple{
+                position: relative;
+                text-align: center;
+                background-color: orange;
+            }
+
+            .navbar-simple div{
+                display: inline-block;
+            }
+
+            .navbar-simple .navbar-simple-brand{
+                font-family: 'Molle', cursive;
+                font-size: 50px;
+                color: darkorange;
+
+                text-shadow:
+                -2px -2px 0 orangered,  
+                2px -2px 0 orangered,
+                -2px 2px 0 orangered,
+                 2px 2px 0 orangered;
+            }
+
+            .navbar-simple .navbar-simple-bars{
+                position: absolute;
+                left: 10px;
+                padding-left: 20px;
+                font-size: 40px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                color: orangered;
+            }
+
+
+            .center-block{
+                margin: 0px auto;
+                float: none;
+                max-width: 500px;
+            }
+
+            .center-block img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .app-buttons-interface{
+                text-align: center;
+            }
+
+            .button-interface{
+                display: inline-block;
+                margin: 0px 10%;
+
+            }
+
+            .button-interface a{
+                font-size: 80px;
+            }
+        </style>
+    </head>
+
+    <body>
+       
+        <nav class="navbar navbar-default">
+            <div class="navbar-simple">
+                <div class="navbar-simple-bars"><i class="fa fa-bars"></i></div>
+                <div class="navbar-simple-brand">Woof!</div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-11 well center-block">
+                    <img src="img/handsome-dog.jpg" alt="Image of dog." class="img-responsive center-block">
+                    <h4>Spike, 14</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-11 center-block app-buttons-interface">
+                    <div class="button-interface">
+                        <a><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="button-interface">
+                        <a><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
