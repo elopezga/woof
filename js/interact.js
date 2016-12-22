@@ -7,7 +7,23 @@
         },{
             name: "Miski",
             age: "10",
+            img: "img/miski.jpg"
+        },{
+            name: "Steve",
+            age: "7",
             img: "img/dog2.jpg"
+        },{
+            name: "Drake",
+            age: "3",
+            img: "img/drake.jpg"
+        },{
+            name: "Bill",
+            age: "9",
+            img: "img/bill.jpg"
+        },{
+            name: "Cody",
+            age: "5",
+            img: "img/cody.jpg"
         }];
 
         /*
@@ -40,9 +56,21 @@
             portfolio.append(`<h4>${element.name}, ${element.age}</h4>`);
         } );
         
+
+        $(".like").click( (event) =>{
+            console.log(event);
+            var topPortfolio = $(`#${doggies.length-1}`);
+            topPortfolio.animate({
+                left: "-9000px"
+            }, 1000, () =>{
+                // Animation completed
+                $(`#${doggies.length-1}`).remove();
+                doggies.splice(doggies.length-1,1);
+                console.log(doggies);
+            });
+        } );
     });
 
-    console.log(doggies);
 })();
 
 
