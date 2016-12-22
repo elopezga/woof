@@ -38,6 +38,7 @@
 
     $("document").ready(() => {
         // Populate
+        /*
         var centerBlockPortfolio = $(".center-block-portfolio");
         centerBlockPortfolio.append('<div class="portfolio-container"></div>');
         var portfolioContainer = $(".portfolio-container");
@@ -45,7 +46,7 @@
         var portfolio = $(".portfolio");
         portfolio.append(`<img src=${doggies[0].img} alt="Image of ${doggies[0].name}" class="img-responsive">`);
         portfolio.append(`<h4>${doggies[0].name}, ${doggies[0].age}</h4>`);
-
+        */
         doggies.forEach( (element, index) =>{
             var centerBlockPortfolio = $(".center-block-portfolio");
             centerBlockPortfolio.append(`<div id=${index} class="portfolio-container-overlay"></div>`);
