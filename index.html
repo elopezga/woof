@@ -16,10 +16,6 @@
                 background-color: #fff6e6;
             }
 
-            .well{
-                background-color: orange;
-            }
-
             .navbar .navbar-nav{
                 width: 100%;
                 text-align: center;
@@ -67,10 +63,6 @@
                 color: orangered;
             }
 
-            .portfolio-row{
-                margin-bottom: 50px;
-            }
-
             .like{
                 color: green;
             }
@@ -80,20 +72,47 @@
             }
 
             .center-block{
-                margin: 0px auto;
-                float: none;
+                position: relative;
+                margin: 10px auto;
                 max-width: 500px;
+                padding: 10px;
             }
 
-            .center-block img{
+            .center-block-portfolio{
+                max-width: 350px;
+            }
+
+            .portfolio-container{
+                display: inline-block;
+                position: relative;
+                background-color: orange;
                 width: 100%;
                 height: 100%;
+                border-radius: 5px;
+            }
+
+            .portfolio-container-overlay{
+                display: inline-block;
+                position: absolute;
+                top: 2.5%;
+                left: 2.5%;
+                right: 2.5%;
+                bottom: 2.5%;
+                background-color: orange;
+                width: 95.5%;
+                height: 95%;
+                border-radius: 5px;
+                
             }
 
             .portfolio{
-                position: absolute;
-                left: 1%;
-                right: 1%;
+                padding: 20px;
+            }
+
+            .portfolio > img{
+                width: 100%;
+                height: auto;
+                margin: 0px auto;
             }
 
             .app-buttons-interface{
@@ -147,6 +166,37 @@
             </div>
         </nav>
 
+        <div class="center-block center-block-portfolio">
+            <!-- Portfolio-container is required to anchor content within portfolio-container.
+                 Without it, all portfolio-contrainer's will collapse -->
+            <!-- Image must be the same dimension for all; otherwise looks ugly -->
+
+            <!--
+            <div class="portfolio-container">
+                <div class="portfolio">
+                    <img src="img/dog1.jpg" alt="Image of dog." class="img-responsive">
+                    <h4>Spike, 14</h4>
+                </div>
+            </div>
+
+            <div class="portfolio-container-overlay">
+                <div class="portfolio">
+                    <img src="img/dog2.jpg" alt="Image of dog." class="img-responsive">
+                    <h4>Spike, 14</h4>
+                </div>
+            </div>
+            -->
+
+        </div>
+
+        <div class="center-block">
+            <div class="app-buttons-interface">
+                <div class="button-interface"><a class="like"><i class="fa fa-heart"></i></a></div>
+                <div class="button-interface"><a class="dislike"><i class="fa fa-times"></i></a></div>
+            </div>
+        </div>
+
+<!--
         <div class="container-fluid">
             <div class="row portfolio-row">
                 <div class="col-xs-11 well center-block">
@@ -154,7 +204,8 @@
                     <h4>Spike, 14</h4>
                 </div>
             </div>
-
+-->
+<!--
             <div class="row">
                 <div class="col-xs-11 center-block app-buttons-interface">
                     <div class="button-interface">
@@ -165,6 +216,7 @@
                     </div>
                 </div>
             </div>
+-->
         </div>
     </body>
 </html>
