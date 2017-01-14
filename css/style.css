@@ -1,0 +1,141 @@
+.debug-style{
+    border: 1px solid black;
+}
+
+body{
+    background-color: #fff6e6;
+}
+
+.navbar .navbar-nav{
+    width: 100%;
+    text-align: center;
+}
+
+#center-brand{
+    float: none;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#nav-bars{
+    border: 1px solid black;
+}
+
+.navbar-simple{
+    position: relative;
+    text-align: center;
+    background-color: orange;
+}
+
+.navbar-simple div{
+    display: inline-block;
+}
+
+.navbar-simple .navbar-simple-brand{
+    font-family: 'Molle', cursive;
+    font-size: 50px;
+    color: darkorange;
+
+    text-shadow:
+    -2px -2px 0 orangered,  
+    2px -2px 0 orangered,
+    -2px 2px 0 orangered,
+        2px 2px 0 orangered;
+}
+
+.navbar-simple .navbar-simple-bars{
+    position: absolute;
+    left: 10px;
+    padding-left: 20px;
+    font-size: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: orangered;
+}
+
+.like{
+    color: green;
+}
+
+.dislike{
+    color: darkred
+}
+
+.center-block{
+    position: relative;
+    margin: 10px auto;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.center-block-portfolio{
+    max-width: 350px;
+}
+
+.portfolio-container{
+    display: inline-block;
+    position: relative;
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-container-overlay{
+    display: inline-block;
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    right: 2.5%;
+    bottom: 2.5%;
+    background-color: orange;
+    width: 95.5%;
+    height: 95%;
+    border-radius: 5px;
+    
+}
+
+.portfolio{
+    padding: 20px;
+}
+
+.portfolio > img{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.app-buttons-interface{
+    text-align: center;
+}
+
+/* Handheld */
+.button-interface{
+    display: inline-block;
+    margin: 0px 10%;
+    border: 1px solid orange;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 8px 2px;
+    background-color: orange;
+}
+
+/* Handheld */
+.button-interface a{
+    /*font-size: 80px;*/
+    font-size: 60px;
+    margin: 0px auto;
+}
+
+/* Tablet */
+@media only screen and (min-device-width: 768px){
+    .button-interface{
+        width: 120px;
+        height: 120px;
+    }
+
+    .button-interface a{
+        font-size: 80px;
+    }
+}

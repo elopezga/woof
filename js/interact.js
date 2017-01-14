@@ -62,6 +62,22 @@
             });
 
         });
+
+        $(".navbar-simple-bars").click( (event) =>{
+            $(".navbar-side").animate({
+                left: "0px"
+            }, 500, () =>{this.focus()});
+        } );
+
+        $(document).click( (event) =>{
+            if( !$(event.target).closest(".navbar-side").length && 
+            !$(event.target).closest(".navbar-simple-bars").length){
+                $(".navbar-side").animate({
+                    left: "-400px"
+                }, 500, ()=>{});
+            }
+
+        });
     });
 
 })();
