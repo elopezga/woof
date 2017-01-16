@@ -24,7 +24,8 @@ body{
 .navbar-simple{
     position: relative;
     text-align: center;
-    background-color: orange;
+    /*background-color: orange;*/
+    background-color: #F4A261;
 }
 
 .navbar-simple div{
@@ -34,13 +35,22 @@ body{
 .navbar-simple .navbar-simple-brand{
     font-family: 'Molle', cursive;
     font-size: 50px;
-    color: darkorange;
+    /*color: darkorange;*/
+    color: #F4A261;
 
+    /*
     text-shadow:
     -2px -2px 0 orangered,  
     2px -2px 0 orangered,
     -2px 2px 0 orangered,
-        2px 2px 0 orangered;
+        2px 2px 0 orangered;*/
+    -webkit-text-stroke: 4px #2A9D8F;
+    /*
+    text-shadow: 
+    -4px -4px 0 #2A9D8F,
+    4px -4px 0 #2A9D8F,
+    -4px 4px 0 #2A9D8F,
+    4px 4px 0 #2A9D8F;*/
 }
 
 .navbar-simple .navbar-simple-bars{
@@ -53,12 +63,32 @@ body{
     color: orangered;
 }
 
+.navbar-simple-bars > a{
+    /*color: #E76F51;*/
+    color: #2A9D8F;
+}
+
+.navbar-simple-bars > a:hover{
+    /*color: #A53214;*/
+    color: #264653;
+}
+
 .like{
     color: green;
+    text-shadow: 
+    0px 0px 0 black,
+    -1px -1px 0 black,
+    0px 0px 0 black,
+    0px 0px 0 black;
 }
 
 .dislike{
-    color: darkred
+    color: darkred;
+    text-shadow: 
+    0px 0px 0 black,
+    -1px -1px 0 black,
+    0px 0px 0 black,
+    0px 0px 0 black;
 }
 
 .center-block{
@@ -75,7 +105,7 @@ body{
 .portfolio-container{
     display: inline-block;
     position: relative;
-    background-color: orange;
+    background-color: #F4A261;
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -88,7 +118,7 @@ body{
     left: 2.5%;
     right: 2.5%;
     bottom: 2.5%;
-    background-color: orange;
+    background-color: #F4A261;
     width: 95.5%;
     height: 95%;
     border-radius: 5px;
@@ -113,12 +143,12 @@ body{
 .button-interface{
     display: inline-block;
     margin: 0px 10%;
-    border: 1px solid orange;
+    border: 1px solid #F4A261;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     padding: 8px 2px;
-    background-color: orange;
+    background-color: #F4A261;
 }
 
 /* Handheld */
