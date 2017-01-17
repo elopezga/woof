@@ -36,7 +36,8 @@ body{
     font-family: 'Molle', cursive;
     font-size: 50px;
     /*color: darkorange;*/
-    color: #F4A261;
+    /*color: #F4A261;*/
+    color: #2A9D8F;
 
     /*
     text-shadow:
@@ -44,7 +45,7 @@ body{
     2px -2px 0 orangered,
     -2px 2px 0 orangered,
         2px 2px 0 orangered;*/
-    -webkit-text-stroke: 4px #2A9D8F;
+    /*-webkit-text-stroke: 4px #2A9D8F;*/
     /*
     text-shadow: 
     -4px -4px 0 #2A9D8F,
